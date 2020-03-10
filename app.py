@@ -38,14 +38,6 @@ def elements():
     user = {'username': 'Bandara'}
     return render_template('elements.html', title='Homepage', user=user)
 
-
-
-
-
-
-
-
-
 @app.route('/view', methods=['GET'])
 def get_todos():
     to_dos = list(collection.find())
