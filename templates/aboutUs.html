@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
+        <meta charset="UTF-8">
+        <meta name="description" content="">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+        <div id="fb-root"></div>
+        <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v6.0"></script>
+    
+        <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+      
+        <!-- Title -->
+        <title>Musica - Music Studio</title>
+    
+        <!-- Favicon -->
+        <link rel="icon" href="static/img/core-img/favicon.ico">
+    
+        <!-- Core Stylesheet -->
+        <link rel="stylesheet" href="{{ url_for('static' , filename='style.css')}}">
+    
+    </head>
+<body>
+    <!-- ##### Preloader ##### -->
+    <div class="preloader d-flex align-items-center justify-content-center">
+        <div class="circle-preloader">
+            <img src="static/img/core-img/compact-disc.png" alt="">
+        </div>
+    </div>
+
+       <!-- ##### Header Area Start ##### -->
+
+       <!-- ##### Navigation bar ##### -->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="{{ url_for('index')}}">Musica</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="{{ url_for('index')}}">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{{ url_for('aboutUs')}}">About Us</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{{ url_for('concertTours')}}">Concert & Tours</a>
+              </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{{ url_for('contact')}}">Contact Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{{ url_for('elements')}}">Our Progress</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{{ url_for('blog')}}">News</a>
+              </li>
+           
+           
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+
+<!-- ##### Navigation bar ##### -->
+
+
+    <!-- ##### Breadcumb Area Start ##### -->
+    <div class="breadcumb-area bg-img bg-overlay2" style="background-image: url(static/img/bg-img/breadcumb.jpg);">
+        <div class="bradcumbContent">
+            <h2>Artist Bio</h2>
+        </div>
+    </div>
+    <!-- bg gradients -->
+    <div class="bg-gradients"></div>
+    <!-- ##### Breadcumb Area End ##### -->
+
+    <!-- ##### About Us Area Start ##### -->
+    <div class="about-us-area section-padding-100-0 bg-img bg-overlay" style="background-image: url(static/img/bg-img/bg-4.jpg);" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-heading">
+                        <h2>Our Crew</h2>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!-- ##### Crew Memeber 1 ##### -->
+            <div class="row">
+                <!-- About Thumbnail -->
+                <div class="col-12 col-lg-6">
+                    <div class="about-thumbnail mb-100">
+                        <img src="static/img/bg-img/team1.jpg" alt="">
+                    </div>
+                </div>
+                <!-- About Content -->
+                <div class="col-12 col-lg-6">
+                    <div class="about-content mb-100">
+                         <!-- Twitter API -->
+                        <h4>Hello, It’s Guruge<a href="https://twitter.com/search?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @search</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></h4>
+                        <p>"I grew up with the guitar and the guitar speaks at this concert" says Nadeeka on his concerts titled Nostal Guitar Electrica 2015 and 'Echo in the Mountains'.
+                            Guruge started as a young musician researching in 1999. His first serious musical work was "Sanyugma" a folk and applied music production with Marcello Titto Li, a Bolivian folk musician, in 1999.Since then he has been working in movies, tele dramas, stage dramas, songs and advertising.</p>
+                              <!-- Facebook API -->
+                            <div class="fb-page" data-href="https://www.facebook.com/Guruge.Nadeeka/" data-tabs="timeline" data-width="" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"><blockquote cite="https://www.facebook.com/Guruge.Nadeeka/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/Guruge.Nadeeka/">Nadeeka Guruge</a></blockquote></div>
+                       
+                            
+                        </div>
+                </div>
+            </div>
+             <!-- ##### End Crew Memeber 1 ##### -->
+
+
+
+              <!-- ##### Crew Memeber 2 ##### -->
+            <div class="row">
+                <!-- About Thumbnail -->
+                <div class="col-12 col-lg-6">
+                    <div class="about-thumbnail mb-100">
+                        <img src="static/img/bg-img/team2.jpg" alt="">
+                    </div>
+                </div>
+                <!-- About Content -->
+                <div class="col-12 col-lg-6">
+                    <div class="about-content mb-100">
+                         <!-- Twitter API -->
+                        <h4>Hello, It’s Perera<a href="https://twitter.com/LaSignore?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @LaSignore</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></h4>
+                        <p> Lahiru Perera born 18 April 1984 also known by his stage name La Signore is a Sri Lankan singer, musician and music producer who came to limelight with his 2008 breakthrough Hit single "Rambari".He was born and raised in Kehelbaddara, Udugampola.</p>
+                         <!-- Facebook API -->
+                        <div class="fb-page" data-href="https://www.facebook.com/LaSignoreMusic/" data-tabs="timeline" data-width="" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"><blockquote cite="https://www.facebook.com/LaSignoreMusic/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/LaSignoreMusic/">La Signore</a></blockquote></div>
+                    </div>
+                </div>
+            </div>
+             <!-- ##### End Crew Memeber 2 ##### -->
+
+
+
+
+              <!-- ##### Crew Memeber 3 ##### -->
+            <div class="row">
+                <!-- About Thumbnail -->
+                <div class="col-12 col-lg-6">
+                    <div class="about-thumbnail mb-100">
+                        <img src="static/img/bg-img/team3.jpg" alt="">
+                    </div>
+                </div>
+                <!-- About Content -->
+                <div class="col-12 col-lg-6">
+                    <div class="about-content mb-100">
+                        <h4>Hello, It’s Ashanthi</h4>
+                        <p>Ashanthi's first major label album was as half of the duo Ashanthi n' Ranidu, with the album Oba Magemai released in 2006 through M Entertainments.Her debut solo album Sandawathuren was released in 2006.This was the first hip hop solo album to be released by a Sri Lankan female.Her general style of music is ethnic hip hop with massive market appeal. Sandawathuren was sung in Sinhala, with the exception of two English songs.
+
+                        </p>
+                         <!-- Facebook API -->
+                        <div class="fb-page" data-href="https://www.facebook.com/ashanthilive/" data-tabs="timeline" data-width="" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"><blockquote cite="https://www.facebook.com/ashanthilive/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/ashanthilive/">Ashanthi de Alwis</a></blockquote></div>
+                    </div>
+                </div>
+            </div>
+             <!-- ##### End Crew Memeber 3 ##### -->
+
+
+
+
+
+              <!-- ##### Crew Memeber 4 ##### -->
+            <div class="row">
+                <!-- About Thumbnail -->
+                <div class="col-12 col-lg-6">
+                    <div class="about-thumbnail mb-100">
+                        <img src="static/img/bg-img/team4.jpg" alt="">
+                    </div>
+                </div>
+                <!-- About Content -->
+                <div class="col-12 col-lg-6">
+                    <div class="about-content mb-100">
+                         <!-- Twitter API -->
+                        <h4>Hello, It’s B&S<a href="https://twitter.com/intent/tweet?screen_name=bnsmusic&ref_src=twsrc%5Etfw" class="twitter-mention-button" data-show-count="false">Tweet to @bnsmusic</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                        </h4>                     
+
+                        <p>Bathiya & Santhush (Sinhala: බාතිය හා සන්තුෂ්), also known as BNS, are a Sri Lankan pop duo consisting of Bathiya Jayakody (born on December 22, 1976) and Santhush Weeraman (born on September 5, 1977), who met while at the "Mary Anne David School of Vocal Music" in Colombo (training mainly under the categories of classical and show tunes). They both were born in Colombo, Sri Lanka. They have been one of the most commercially successful music acts in Sri Lanka in the last two decades</p>
+                        <!-- Facebook API -->
+                        <div class="fb-page" data-href="https://www.facebook.com/bnsmusic1/" data-tabs="timeline" data-width="" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"><blockquote cite="https://www.facebook.com/bnsmusic1/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/bnsmusic1/">Bathiya and Santhush (BNS)</a></blockquote></div>
+                  
+                        
+                    </div>
+
+                </div>
+            </div>
+             <!-- ##### End Crew Memeber 4 ##### -->
+
+
+
+
+              <!-- ##### Crew Memeber 5 ##### -->
+            <div class="row">
+                <!-- About Thumbnail -->
+                <div class="col-12 col-lg-6">
+                    <div class="about-thumbnail mb-100">
+                        <img src="static/img/bg-img/team5.jpg" alt="">
+                    </div>
+                </div>
+                <!-- About Content -->
+                <div class="col-12 col-lg-6">
+                    <div class="about-content mb-100">
+                         <!-- Twitter API -->
+                        <h4>Hello, It’s Tim <a href="https://twitter.com/Avicii?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @Avicii</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                        </h4>
+
+                        <p>Tim Bergling (Swedish: ; 8 September 1989 – 20 April 2018), known professionally as Avicii (/əˈviːtʃi/ ə-VEE-chee, Swedish: [aˈvɪ̌tːɕɪ]), was a Swedish DJ, electronic musician, and songwriter who specialized in audio programming, remixing, and record producing.
+
+                            At the age of 16, Bergling began posting his remixes on electronic music forums, which led to his first record deal.[5] He rose to prominence in 2011 with his single "Levels". His debut studio album, True (2013), blended electronic music with elements of multiple genres and received generally positive reviews.</p>
+                            
+                            <!-- Facebook API -->
+                            <div class="fb-page" data-href="https://www.facebook.com/avicii/" data-tabs="timeline" data-width="" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"><blockquote cite="https://www.facebook.com/avicii/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/avicii/">Avicii</a></blockquote></div>
+                        
+                        </div>
+
+                </div>
+            </div>
+             <!-- ##### End Crew Memeber 5 ##### -->
+
+    <!-- ##### Footer Area Start ##### -->
+    <footer class="footer-area section-padding-100-0">
+        <div class="container-fluid">
+            <div class="row">
+
+                
+
+                <!-- Footer Widget Area -->
+                <div class="col-12 col-sm-4 col-xl-2">
+                    <div class="footer-widget-area mb-100">
+                        <div class="widget-title">
+                            <h4>About</h4>
+                        </div>
+                        <nav>
+                            <ul class="footer-nav">
+                                <li><a href="{{ url_for('index')}}">Home</a></li>
+                                <li><a href="{{ url_for('aboutUs')}}">About Us</a></li>
+                                <li><a href="{{ url_for('concertTours')}}">Concert &amp; Tours</a></li>
+                                <li><a href="{{ url_for('blog')}}">News</a></li>
+                                <li><a href="{{ url_for('contact')}}">Contact</a></li>
+                                <li><a href="{{ url_for('elements')}}">Our Progress</a></li>
+
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+
+
+         <!-- Footer Widget Area -->
+         <div class="col-12 col-sm-4 col-xl-2">
+            <div class="footer-widget-area mb-100">
+                <div class="widget-title">
+                    <h4>Social</h4>
+                </div>
+                <nav>
+                    <ul class="footer-nav">
+                        <li><a href="https://www.facebook.com/">Facebook</a></li>
+                        <li><a href="https://twitter.com/">Twitter</a></li>
+                        <li><a href="https://dribbble.com/">Snapchat</a></li>
+                        <li><a href="https://www.behance.net/">Instagram</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+
+
+            </div>
+        </div>
+
+    </footer>
+    <!-- ##### Footer Area Start ##### -->
+
+    <!-- ##### All Javascript Script ##### -->
+    <!-- jQuery-2.2.4 js -->
+    <script src="static/js/jquery/jquery-2.2.4.min.js"></script>
+    <!-- Popper js -->
+    <script src="static/js/bootstrap/popper.min.js"></script>
+    <!-- Bootstrap js -->
+    <script src="static/js/bootstrap/bootstrap.min.js"></script>
+    <!-- All Plugins js -->
+    <script src="static/js/plugins/plugins.js"></script>
+    <!-- Active js -->
+    <script src="static/js/active.js"></script>
+</body>
+
+</html>

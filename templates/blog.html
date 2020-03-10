@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
+        <meta charset="UTF-8">
+        <meta name="description" content="">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+        <div id="fb-root"></div>
+        <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v6.0"></script>
+    
+        <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+      
+        <!-- Title -->
+        <title>Musica - Music Studio</title>
+    
+        <!-- Favicon -->
+        <link rel="icon" href="static/img/core-img/favicon.ico">
+    
+        <!-- Core Stylesheet -->
+        <link rel="stylesheet" href="{{ url_for('static' , filename='style.css')}}">
+    
+    </head>
+<body>
+    <!-- ##### Preloader ##### -->
+    <div class="preloader d-flex align-items-center justify-content-center">
+        <div class="circle-preloader">
+            <img src="static/img/core-img/compact-disc.png" alt="">
+        </div>
+    </div>
+
+       <!-- ##### Header Area Start ##### -->
+
+       <!-- ##### Navigation bar ##### -->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="{{ url_for('index')}}">Musica</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="{{ url_for('index')}}">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{{ url_for('aboutUs')}}">About Us</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{{ url_for('concertTours')}}">Concert & Tours</a>
+              </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{{ url_for('contact')}}">Contact Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{{ url_for('elements')}}">Our Progress</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{{ url_for('blog')}}">News</a>
+              </li>
+           
+           
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+
+<!-- ##### Navigation bar ##### -->
+
+
+
+    <!-- ##### Breadcumb Area Start ##### -->
+    <div class="breadcumb-area bg-img bg-overlay2" style="background-image: url(static/img/bg-img/breadcumb3.jpg);">
+        <div class="bradcumbContent">
+            <h2>News</h2>
+        </div>
+    </div>
+    <!-- bg gradients -->
+    <div class="bg-gradients"></div>
+    <!-- ##### Breadcumb Area End ##### -->
+
+    <!-- ##### Blog Area Start ##### -->
+    <div class="blog-area mt-30 section-padding-100">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="fitness-blog-posts">
+
+                        <!-- Single Post Start -->
+                        <div class="single-blog-post mb-100 wow fadeInUp" data-wow-delay="100ms">
+                            <!-- Post Thumb -->
+                            <div class="blog-post-thumb mb-30">
+                                <img src="static/img/blog-img/1.jpg" alt="">
+                            </div>
+                            <!-- Post Title -->
+                            <a href="#" class="post-title">54 Division Organizes a Mega Musical Show</a>
+                            <!-- Post Meta -->
+                            <div class="post-meta d-flex justify-content-between">
+                                <div class="post-date">
+                                    <p>May 22, 2020</p>
+                                </div>
+                               
+                            </div>
+                            <!-- bg gradients -->
+                            <div class="bg-gradients mb-30 w-25"></div>
+                            <!-- Post Excerpt -->
+                            <p>In connection with Poson festival, 54 Division Headquarters in Mannar organized a mega musical show on the instructions of its General Officer Commanding (GOC), Brigadier M.A.M Dias on Saturday (22).
+
+                                The musical show backed by the popular local band ‘Prabaha with Sruthi’ thrilled both civilians and Army personnel alike throughout the evening when Tamil singer Gokularajan popularly known as ‘Gokulan’ and Sinhala vocalists rent the air with their latest Tamil and Sinhala hits. The show was held at Mannar public grounds as dusk fell.
+                                
+                                Major General Boniface Perera, Commander, Security Forces Headquarters, Wanni (SFHQ - W) as the Chief Guest, together with Manna district Government Agent Mr J.A Sarathchandra and several senior officers, attended the occasion.
+                                
+                                During the event, distribution of prizes and merit awards to the best sportsmen who did well in the in inter provincial council volleyball and netball tournament, which was organized by the 54 Division, took place, adding importance to the day’s entertaining feature.
+                                
+                                After more than thirty years of war, people in their hundreds, including mostly the youngsters, flocked to Mannar public grounds to enjoy the rare entertainment in that pleasant evening..</p>
+                            <!-- Read More -->
+                           
+                        </div>
+
+                        <!-- Single Post Start -->
+                        <div class="single-blog-post mb-100 wow fadeInUp" data-wow-delay="300ms">
+                            <!-- Post Thumb -->
+                            <div class="blog-post-thumb mb-30">
+                                <div class="view">
+                                    <!--Video source-->
+                                    <div class="embed-responsive embed-responsive-16by9">
+                                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/bRwuva0W0_Y" allowfullscreen></iframe>
+                                      </div>
+                                    <div class="mask rgba-black-strong"></div>
+                                  </div>
+                            </div>
+                            <!-- Post Title -->
+                            <a href="#" class="post-title">Kilinochchi Musical Show Attracts Crowds
+                            </a>
+                            <!-- Post Meta -->
+                            <div class="post-meta d-flex justify-content-between">
+                                <div class="post-date">
+                                    <p>Jan 22, 2020</p>
+                                    
+                                </div>
+                               
+                            </div>
+                            <!-- bg gradients -->
+                            <div class="bg-gradients mb-30 w-25"></div>
+                            <!-- Post Excerpt -->
+                            <p>Speaking at the Press conference yesterday, Bandula Somasiri, Sri Lankan Consul-General said the two and half hour musical evening is aimed at bringing the Sri Lankan community residing in the UAE closer to home and to their culture and music.
+
+                                The two leading singers, who are also winners of several national and international music awards, will be accompanied on the show by Dharmasiri Gamage, leading Film director and Rohana Weerasingh, music director from the Sri Lankan films and Television.
+                                
+                                Mr Somasiri said that the artistes would also meet on Friday (May 9) over 200 Sri Lankan expatriate children who are students of the Cultural School housed on the Consulate premises in Dubai. They will exchange and share with the students the music and culture of Sri Lanka and through their music spread the message of peace in the island nation..</p>
+                            <!-- Read More -->
+                            
+                        </div>
+
+                        <!-- Single Post Start -->
+                        <div class="single-blog-post mb-100 wow fadeInUp" data-wow-delay="500ms">
+                            <!-- Post Thumb -->
+                            <div class="blog-post-thumb mb-30">
+                                <div class="view">
+                                    <!--Video source-->
+                                    <div class="embed-responsive embed-responsive-16by9">
+                                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/CL3nhYJwgeU" allowfullscreen></iframe>
+                                      </div>
+                                    <div class="mask rgba-black-strong"></div>
+                                  </div>
+                            </div>
+                            <!-- Post Title -->
+                            <a href="#" class="post-title">LIVE IN LOS ANGELES, “THAWA EKA DAWASAK” WAS ORGANIZED BY SOUTHERN CALIFORNIA SRI LANKAN CULTURAL & ARTS FOUNDATION</a>
+                            <!-- Post Meta -->
+                            <div class="post-meta d-flex justify-content-between">
+                                <div class="post-date">
+                                    <p>Jan 30, 2020</p>
+                                </div>
+                               
+                            </div>
+                            <!-- bg gradients -->
+                            <div class="bg-gradients mb-30 w-25"></div>
+                            <!-- Post Excerpt -->
+                            <p>“Thawa Eka Dawasak”Live in Concert- Sri Lankan Musical Show was organized by Southern California Sri Lankan Cultural and Arts Foundation (SCSLCAF) on Saturday, October 13, 2018 at the Historic Warner Grand Theater.
+
+                                The Musical Show attracted over 500 music lovers and well wishers of different nationalities and cultures. The show was held to raise funds for the Buddhist Vihara in San Diego. The SCSLCAF also raised funds for underprivileged children all over the world. The fund ensures every child, is cared for and educated regardless of family’s ability to pay.
+                                
+                                There were two experienced and famous artists from Sri Lanka which was the highlight of the show. The voice for all seasons, Mr Keerthi Pasquel and the voice that never withers Mr Anil Bharathi. The show was equally divided into two parts and each artists were given equal opportunity to entertain the audience. The main reason to bring these two artists was the demand for the songs of the 70’s and 80’s. However, their music was loved by all ages and everyone continued to enjoy their golden oldies..</p>
+                            <!-- Read More -->
+                            
+                        </div>
+
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ##### Blog Area End ##### -->
+
+    <!-- ##### CTA Area Start ##### -->
+    <div class="musica-cta-area section-padding-100 bg-img bg-overlay2" style="background-image: url(static/img/blog-img/4.jpg);">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="cta-content d-flex justify-content-between align-items-center">
+                        <div class="cta-text">
+                            <h4>Contact us now</h4>
+                            <h2>Do you have a question?</h2>
+                         
+                        </div>
+                        <div class="cta-btn">
+                            <a href="contact.html" class="btn musica-btn">contact us</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ##### CTA Area End ##### -->
+<!-- ##### Footer Area Start ##### -->
+<footer class="footer-area section-padding-100-0">
+    <div class="container-fluid">
+        <div class="row">
+
+            
+
+            <!-- Footer Widget Area -->
+            <div class="col-12 col-sm-4 col-xl-2">
+                <div class="footer-widget-area mb-100">
+                    <div class="widget-title">
+                        <h4>About</h4>
+                    </div>
+                    <nav>
+                        <ul class="footer-nav">
+                            <li><a href="{{ url_for('index')}}">Home</a></li>
+                            <li><a href="{{ url_for('aboutUs')}}">About Us</a></li>
+                            <li><a href="{{ url_for('concertTours')}}">Concert &amp; Tours</a></li>
+                            <li><a href="{{ url_for('blog')}}">News</a></li>
+                            <li><a href="{{ url_for('contact')}}">Contact</a></li>
+                            <li><a href="{{ url_for('elements')}}">Our Progress</a></li>
+
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+
+     <!-- Footer Widget Area -->
+     <div class="col-12 col-sm-4 col-xl-2">
+        <div class="footer-widget-area mb-100">
+            <div class="widget-title">
+                <h4>Social</h4>
+            </div>
+            <nav>
+                <ul class="footer-nav">
+                    <li><a href="https://www.facebook.com/">Facebook</a></li>
+                    <li><a href="https://twitter.com/">Twitter</a></li>
+                    <li><a href="https://dribbble.com/">Snapchat</a></li>
+                    <li><a href="https://www.behance.net/">Instagram</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+
+
+        </div>
+    </div>
+
+        
+    </footer>
+    <!-- ##### Footer Area Start ##### -->
+
+    <!-- ##### All Javascript Script ##### -->
+    <!-- jQuery-2.2.4 js -->
+    <script src="static/js/jquery/jquery-2.2.4.min.js"></script>
+    <!-- Popper js -->
+    <script src="static/js/bootstrap/popper.min.js"></script>
+    <!-- Bootstrap js -->
+    <script src="static/js/bootstrap/bootstrap.min.js"></script>
+    <!-- All Plugins js -->
+    <script src="static/js/plugins/plugins.js"></script>
+    <!-- Active js -->
+    <script src="static/js/active.js"></script>
+</body>
+
+</html>
