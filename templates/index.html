@@ -126,6 +126,49 @@
 
 
     <!-- ##### Hero Area End ##### -->
+<!-- API -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+<script type=text/javascript>
+  
+    $SCRIPT_ROOT = {{ request.script_root|tojson|safe }};
+  
+  </script>
+  
+  
+  
+  <script type=text/javascript>
+  
+    $(function() {
+  
+      $('a#calculate').bind('click', function() {
+  
+        $.getJSON($SCRIPT_ROOT + '/search', {
+  
+          a: $('input[name="a"]').val()
+  
+        }, function(data) {
+  
+          $("#result").text(data.result.name);
+  
+        });
+  
+        return false;
+  
+      });
+  
+    });
+  
+  </script>
+
+  
+
+
+  
+
+
+
+<!-- ##### Ne API ##### -->
 
 
     
@@ -703,7 +746,14 @@
 
             </div>
         </div>
+        
+        
+<!-- Search API -->
 
+ <h1>Search song</h1>
+ <p><input type = text size = 10 name = a>
+ <span id = result>?</span>
+ <p><a href=# id=calculate>Search Song</a></p>
 
         
     </footer>
