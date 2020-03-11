@@ -1,6 +1,7 @@
-from flask import Flask, request, redirect, render_template
+from flask import Flask, request, redirect, render_template, jsonify
 from pymongo import MongoClient
 from bson import json_util
+import requests
 
 app = Flask(__name__)
 
@@ -42,6 +43,20 @@ def elements():
 def get_todos():
     to_dos = list(collection.find())
     return json_util.dumps(to_dos)
+
+
+@app.route('/search')
+
+def search():
+
+    recipe = request.args.get('a', 0, type=str)
+
+    response = requests.get(f"https://searchly.asuarez.dev/api/v1/song/search?query={recipe}")
+
+    response = response.json()["response"]["results"][0]
+
+    return jsonify(result=response) 
+
 
 
 @app.route('/add', methods=['POST'])
