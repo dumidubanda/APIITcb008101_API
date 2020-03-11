@@ -3,6 +3,7 @@
 
 <head>
 
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
@@ -19,13 +20,23 @@
     <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
   
     <!-- Title -->
-    <title>Musica - Music Studio</title>
+    <title>{{ title }} - Microblog</title>
 
     <!-- Favicon -->
     <link rel="icon" href="static/img/core-img/favicon.ico">
 
     <!-- Core Stylesheet -->
     <link rel="stylesheet" href="{{ url_for('static' , filename='style.css')}}">
+
+
+
+
+
+   
+
+
+
+
 
 </head>
 
@@ -126,6 +137,14 @@
 
 
     <!-- ##### Hero Area End ##### -->
+
+
+
+
+
+
+  <!-- ##### New API ##### -->
+
 <!-- API -->
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 
@@ -171,6 +190,11 @@
 <!-- ##### Ne API ##### -->
 
 
+
+
+
+
+
     
 
     <!-- ##### About Us Area Start ##### -->
@@ -197,15 +221,17 @@
                 <!-- About Content -->
                 <div class="col-12 col-lg-6">
                     <div class="about-content mb-100">
+
                          <!-- Twitter API -->
                         <h4>Hello, It’s Guruge<a href="https://twitter.com/search?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @search</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
                         <!-- linkedin API -->
-                         <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script><script src="https://platform.linkedin.com/in.js" type="text/javascript">lang: en_US</script>
-                         <script type="IN/Share" data-url="https://www.linkedin.com"></script>
-                        </h4>
+                        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script><script src="https://platform.linkedin.com/in.js" type="text/javascript">lang: en_US</script>
+                        <script type="IN/Share" data-url="https://www.linkedin.com"></script>
+                    </h4>
                         <p>"I grew up with the guitar and the guitar speaks at this concert" says Nadeeka on his concerts titled Nostal Guitar Electrica 2015 and 'Echo in the Mountains'.
                             Guruge started as a young musician researching in 1999. His first serious musical work was "Sanyugma" a folk and applied music production with Marcello Titto Li, a Bolivian folk musician, in 1999.Since then he has been working in movies, tele dramas, stage dramas, songs and advertising.</p>
                               <!-- Facebook API -->
+
                             <div class="fb-page" data-href="https://www.facebook.com/Guruge.Nadeeka/" data-tabs="timeline" data-width="" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"><blockquote cite="https://www.facebook.com/Guruge.Nadeeka/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/Guruge.Nadeeka/">Nadeeka Guruge</a></blockquote></div>
                        
                             
@@ -229,9 +255,10 @@
                     <div class="about-content mb-100">
                          <!-- Twitter API -->
                         <h4>Hello, It’s Perera<a href="https://twitter.com/LaSignore?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @LaSignore</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-                        <!-- linkedin API -->
+                         <!-- linkedin API -->
                          <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script><script src="https://platform.linkedin.com/in.js" type="text/javascript">lang: en_US</script>
                          <script type="IN/Share" data-url="https://www.linkedin.com"></script>
+                        
                         </h4>
                         <p> Lahiru Perera born 18 April 1984 also known by his stage name La Signore is a Sri Lankan singer, musician and music producer who came to limelight with his 2008 breakthrough Hit single "Rambari".He was born and raised in Kehelbaddara, Udugampola.</p>
                          <!-- Facebook API -->
@@ -255,9 +282,10 @@
                 <!-- About Content -->
                 <div class="col-12 col-lg-6">
                     <div class="about-content mb-100">
-                        <h4>Hello, It’s Ashanthi<!-- linkedin API -->
-                         <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script><script src="https://platform.linkedin.com/in.js" type="text/javascript">lang: en_US</script>
-                         <script type="IN/Share" data-url="https://www.linkedin.com"></script></h4>
+                        <h4>Hello, It’s Ashanthi
+                            <!-- linkedin API -->
+                            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script><script src="https://platform.linkedin.com/in.js" type="text/javascript">lang: en_US</script>
+                            <script type="IN/Share" data-url="https://www.linkedin.com"></script></h4>
                         <p>Ashanthi's first major label album was as half of the duo Ashanthi n' Ranidu, with the album Oba Magemai released in 2006 through M Entertainments.Her debut solo album Sandawathuren was released in 2006.This was the first hip hop solo album to be released by a Sri Lankan female.Her general style of music is ethnic hip hop with massive market appeal. Sandawathuren was sung in Sinhala, with the exception of two English songs.
 
                         </p>
@@ -286,9 +314,8 @@
                          <!-- Twitter API -->
                         <h4>Hello, It’s B&S<a href="https://twitter.com/intent/tweet?screen_name=bnsmusic&ref_src=twsrc%5Etfw" class="twitter-mention-button" data-show-count="false">Tweet to @bnsmusic</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
                         <!-- linkedin API -->
-                         <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script><script src="https://platform.linkedin.com/in.js" type="text/javascript">lang: en_US</script>
-                         <script type="IN/Share" data-url="https://www.linkedin.com"></script>
-                        </h4>                     
+                        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script><script src="https://platform.linkedin.com/in.js" type="text/javascript">lang: en_US</script>
+                        <script type="IN/Share" data-url="https://www.linkedin.com"></script></h4>                     
 
                         <p>Bathiya & Santhush (Sinhala: බාතිය හා සන්තුෂ්), also known as BNS, are a Sri Lankan pop duo consisting of Bathiya Jayakody (born on December 22, 1976) and Santhush Weeraman (born on September 5, 1977), who met while at the "Mary Anne David School of Vocal Music" in Colombo (training mainly under the categories of classical and show tunes). They both were born in Colombo, Sri Lanka. They have been one of the most commercially successful music acts in Sri Lanka in the last two decades</p>
                         <!-- Facebook API -->
@@ -318,9 +345,8 @@
                          <!-- Twitter API -->
                         <h4>Hello, It’s Tim <a href="https://twitter.com/Avicii?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @Avicii</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
                         <!-- linkedin API -->
-                         <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script><script src="https://platform.linkedin.com/in.js" type="text/javascript">lang: en_US</script>
-                         <script type="IN/Share" data-url="https://www.linkedin.com"></script>
-                        </h4>
+                        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script><script src="https://platform.linkedin.com/in.js" type="text/javascript">lang: en_US</script>
+                        <script type="IN/Share" data-url="https://www.linkedin.com"></script></h4>
 
                         <p>Tim Bergling (Swedish: ; 8 September 1989 – 20 April 2018), known professionally as Avicii (/əˈviːtʃi/ ə-VEE-chee, Swedish: [aˈvɪ̌tːɕɪ]), was a Swedish DJ, electronic musician, and songwriter who specialized in audio programming, remixing, and record producing.
 
@@ -478,10 +504,10 @@
 
  <!-- ##### Boostrap carousel ##### -->
  <div class="section-heading">
-     <div style="background-image: url(static/img/bg-img/bg-4.jpg);">
+    <div style="background-image: url(static/img/bg-img/bg-4.jpg);">
     <h2>Done by Us</h2>
 </div>
-     </div>
+</div>
 <!--Carousel Wrapper-->
 <div id="video-carousel-example2" class="carousel slide carousel-fade" data-ride="carousel">
   <!--Indicators-->
@@ -627,6 +653,17 @@
 <!--Carousel Wrapper-->
   <!-- ##### Boostrap carousel ##### -->
 
+  
+
+  <div class="section-heading">
+    <div style="background-image: url(static/img/bg-img/bg-4.jpg);">
+    <!--  API -->
+        <h1>Search song</h1>
+        <p><input type = text size = 10 name = a>
+            <h1><span id = result>?</span></h1>
+        <p><a href=# id=calculate>Search Song</a></p>
+</div>
+</div>
 
 
 
@@ -699,6 +736,8 @@
     
 
 
+</p>
+
     <!-- ##### Footer Area Start ##### -->
     <footer class="footer-area section-padding-100-0">
         <div class="container-fluid">
@@ -748,14 +787,10 @@
 
             </div>
         </div>
-        
-        
-<!-- Search API -->
 
- <h1>Search song</h1>
- <p><input type = text size = 10 name = a>
- <span id = result>?</span>
- <p><a href=# id=calculate>Search Song</a></p>
+ <!-- Search API -->
+
+
 
         
     </footer>
